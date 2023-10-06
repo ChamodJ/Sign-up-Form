@@ -1,0 +1,119 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background-image: url(images/signup-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signup-form {
+  background-color: aliceblue;
+  min-height: 60vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.signup-form h1 {
+  text-decoration: underline;
+  text-decoration-color: #0055d0;
+  color: #0a4f7d;
+  font-size: 40px;
+}
+
+.signup-form .data-field {
+  margin: 20px 0;
+}
+
+.signup-form input {
+  min-height: 20px;
+  padding: 10px 20px;
+  border: 1px solid #0096c7;
+  border-radius: 10px;
+  min-width: 300px;
+  outline: none;
+  color: #03045e;
+}
+
+.signup-form input:focus {
+  border: 3px solid #ff8500;
+  box-shadow: none;
+}
+
+.data-field-TAC {
+  display: flex;
+
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-wrapper .terms-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper .terms-label .label-text {
+  margin-left: 10px;
+}
+
+.checkbox-wrapper .checkbox-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-wrapper .checkbox-box {
+  fill: rgba(207, 205, 205, 0.425);
+  stroke: #ff8500;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-wrapper .checkbox-tick {
+  stroke: #8c00ff;
+  stroke-dasharray: 172;
+  stroke-dashoffset: 172;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box,
+  .checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+  stroke-dashoffset: 0;
+}
+
+#submit-btn {
+  width: 250px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #2667ff;
+  color: #ff5400;
+  font-size: 20px;
+}
+
+#submit-btn:hover {
+  background-color: #ff8500;
+  color: #2667ff;
+  cursor: pointer;
+}
+
+#submit-btn:active {
+  background-color: #ff5400;
+}
+
+.login-reg-div a {
+  text-decoration: none;
+}
+
+.login-reg-div a :active{
+  color: #ff5400;
+}
